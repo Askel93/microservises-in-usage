@@ -1,6 +1,7 @@
 package com.optimagrowth.license.model;
 
 import lombok.*;
+import org.springframework.hateoas.RepresentationModel;
 
 @Getter
 @Setter
@@ -8,7 +9,7 @@ import lombok.*;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class License {
+public class License extends RepresentationModel<License> {
 
     private int id;
     private String licenseId;
