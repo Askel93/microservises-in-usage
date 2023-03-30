@@ -33,7 +33,6 @@ public class LicenseService {
         if(nonNull(license)){
             license.setOrganizationId(organizationId);
             response = String.format(messages.getMessage("license.create.message", null, locale), license.toString());
-                    //String.format("This is the post and the object is: %s", license.toString());
         }
 
         return response;
@@ -45,7 +44,6 @@ public class LicenseService {
         if(nonNull(license)){
             license.setOrganizationId(organizationId);
             response = String.format(messages.getMessage("license.update.message", null, null), license.toString());
-                    //String.format("This is the put and the object is: %s", license.toString());
         }
 
         return response;
